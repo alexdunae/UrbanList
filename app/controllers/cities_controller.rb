@@ -5,7 +5,7 @@ class CitiesController < ApplicationController
   end
 
   def create
-  	@city = City.new(project_params)
+  	@city = City.new(cities_params)
 
 
 	    if @city.save
@@ -21,7 +21,7 @@ class CitiesController < ApplicationController
 
   private
 
-  def project_params
+  def cities_params
     params.require(:city).permit(:image_url, :name)
   end  
 

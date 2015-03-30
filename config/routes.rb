@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     resources :cities, only: [:index, :new, :create] do
     resources :lists, only: [:show, :new, :create]
+    resources :list_desctiption, only: [:show]
     resources :descriptions, only: [:show, :new, :create]
     resources :images, only: [:show, :new, :create]
   end

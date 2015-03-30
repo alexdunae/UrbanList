@@ -1,0 +1,6 @@
+<h1>ListDesctiption#show</h1>
+<p>Find me in app/views/list_desctiption/show.html.erb</p>
+
+<% @listsDescription.each do |ld| %>
+	<%= link_to ld.name, city_description_path(ld) %>
+<% end %>

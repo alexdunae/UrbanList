@@ -6,7 +6,7 @@
 <div id="cityBody">
 	<% @cities.each do |city| %>
 	<div id="cityBtn">
-		<%= image_tag(city.image_url) %>
+		<%= image_tag(city.image_url) %><Br/>
 		<%= link_to city.name, city_list_path(city)%>
 	</div>
 	<%end%>

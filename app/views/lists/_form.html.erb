@@ -1,0 +1,10 @@
+<%= form_for([@city, @list]) do |l| %>
+  <h1>New List</h1>	
+  <%= l.label :name %>
+  <br>
+  <%= l.text_field :name, required: true %>
+  <br>
+  <br>
+
+  <%= c.submit 'Save!' %>
+<% end %>
