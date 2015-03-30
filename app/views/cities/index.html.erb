@@ -1,0 +1,16 @@
+<div id="header">
+	<h1>Cities#index</h1>
+	<a href="">Welcome</a>
+</div>
+
+<div id="cityBody">
+	<% @cities.each do |city| %>
+	<div id="cityBtn">
+		<%= image_tag(city.image_url) %>
+		<%= link_to city.name, city_list_path(city)%>
+	</div>
+	<%end%>
+
+	<Br/>
+	<%= link_to 'New city', new_city_path %>
+</div>

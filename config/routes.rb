@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  root 'cities#index'
+
+    resources :cities, only: [:index, :new, :create] do
+    resources :lists, only: [:show, :new, :create]
+    resources :descriptions, only: [:show, :new, :create]
+    resources :images, only: [:show, :new, :create]
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
