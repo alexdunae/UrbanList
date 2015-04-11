@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'users/new'
+
+  get 'users/create'
+
   root 'cities#index'
 
     resources :cities, only: [:index, :new, :create, :show] do
