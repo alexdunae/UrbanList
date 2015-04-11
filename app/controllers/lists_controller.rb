@@ -1,10 +1,12 @@
 class ListsController < ApplicationController
+  before_action :lookup_city
+
   def show
-  	@lists = List.find(params[:id])
+  	@lists = @city.lists.find(params[:id])
   end
 
   def create
-  	@list = List.new(list_params)
+  	@list = @city.lists.new(list_params)
 
 
 	    if @list.save
@@ -15,12 +17,18 @@ class ListsController < ApplicationController
   end
 
   def new
-  	@list = List.new
+  	@list = @city.lists.new
   end
 
   private
 
   def list_params
-    params.require(:city).permit(:image_url, :name)
+    params.require(:list).permit(:name, :image_url, :city_id)
   end  
+
+  def lookup_city
+    @city = City.find(params[:city_id])
+  end
+
+
 end

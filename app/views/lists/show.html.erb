@@ -1,10 +1,12 @@
 <div id="cityBody">
-	<% @lists.each do |list| %>
-	<div id="cityBtn">
-		<%= link_to list.name, city_list_description_path(city)%>
+	<%= link_to 'Back', city_path(@city)%>
+	<% @lists.descriptions.each do |desc| %>
+	<div id="listBtn">
+		<h2><%= link_to desc.name, city_list_description_path(@lists.city, @lists, desc)%></h2>
+		<p><%= desc.subtitle%></p>
 	</div>
 	<%end%>
 
 	<Br/>
-	<%= link_to 'New List', new_city_list_path %>
+	<%= link_to 'New Item', new_city_list_description_path(@lists.city, @lists) %>
 </div>

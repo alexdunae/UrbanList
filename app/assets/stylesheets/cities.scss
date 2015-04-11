@@ -1,3 +1,168 @@
 // Place all the styles related to the cities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    background-color: #FF8929;
+}
+#header
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color: #F5F5F5;
+	border-color: #888585;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+	min-height: 600px;
+}
+#logo
+{
+	display: inline;
+	margin-left:auto;
+	margin-right:auto;
+}
+#logo:hover{
+	opacity: .7;
+	-webkit-transition: all .9s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+}
+#cityBody{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color: #FFF9F5;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+}
+#cityBtn
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #C4C4C4;
+	border-color: #888585;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+	font-color: white;
+	font-size: 2em;
+}
+#cityBtn1
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #C4C4C4;
+	border-color: #888585;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+	font-color: white;
+	font-size: 2em;
+}
+#cityBtn.img
+{
+	width:5px;
+}
+#cityName{
+	font-color: white;
+}
+
+#image{
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 50px;
+	max-height: 50px;
+}
+#logoTop{
+	margin-left:10px;
+}
+#listBtn
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFE4BF;
+	border-color: #FFBC5E;
+	border-bottom: 0px;
+	border-top: 0px;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+ul.img-list li {
+  display: inline-block;
+  height: 400px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 640px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+  cursor: pointer;
+  display: table;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+ 
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+ 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.link-inside-img:link { 
+  color: white;
+}
+.link-inside-img:visited { 
+  color: white;
+}
+.link-inside-img:hover { 
+  color: white;
+}
+.link-inside-img:active { 
+  color: white;
+}

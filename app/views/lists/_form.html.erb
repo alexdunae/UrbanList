@@ -4,7 +4,11 @@
   <br>
   <%= l.text_field :name, required: true %>
   <br>
+  <%= l.label :image_url %>
+  <br>
+  <%= l.text_field :image_url, required: true %>
+  <br>
   <br>
 
-  <%= c.submit 'Save!' %>
+  <%= l.submit 'Save!' %>
 <% end %>

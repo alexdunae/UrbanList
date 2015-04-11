@@ -1,4 +1,4 @@
 class Description < ActiveRecord::Base
-  belongs_to :List
+  belongs_to :list
   has_many :images
 end

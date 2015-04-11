@@ -1,0 +1,30 @@
+<%= form_for([@list.city, @list, @description]) do |d| %>
+  <h1>New Item</h1>	
+  <%= d.label :name %>
+  <br>
+  <%= d.text_field :name, required: true %>
+  <br>
+
+  <%= d.label :subtitle %>
+  <br>
+  <%= d.text_field :subtitle, required: true %>
+  <br>
+
+  <%= d.label :address %>
+  <br>
+  <%= d.text_field :address, required: true %>
+  <br>
+
+  <%= d.label :detail %>
+  <br>
+  <%= d.text_area :detail %>
+  <br>
+  <br>
+
+  <%= d.label :rating %>
+  <br>
+  <%= d.text_field :rating, required: true %>
+  <br>
+
+  <%= d.submit 'Save!' %>
+<% end %>

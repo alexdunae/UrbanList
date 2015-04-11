@@ -1,2 +1,43 @@
-<h1>Descriptions#show</h1>
-<p>Find me in app/views/descriptions/show.html.erb</p>
+<div id="cityBody">
+	<%= link_to 'Back', city_list_path(@list.city, @list)%>
+	<h1><%= @description.name %></h1>
+	<h2><%= @description.subtitle %></h2>
+
+	<% if @description.priceRange == 5 %>
+		<%= image_tag('/seedImages/5stars.png')%>
+	<% else %>
+		<% if @description.priceRange == 4 %>
+			<%= image_tag('/seedImages/4stars.png')%>
+		<% else %>
+			<% if @description.priceRange == 3 %>
+				<%= image_tag('/seedImages/3stars.png')%>
+			<% else %>
+				<% if @description.priceRange == 2 %>
+					<%= image_tag('/seedImages/2stars.png')%>
+				<% else %>
+					<% if @description.priceRange == 1 %>
+						<%= image_tag('/seedImages/1stars.png')%>
+					<% else %>
+						<%= image_tag('/seedImages/0stars.png')%>
+					<% end %>
+				<% end %>
+			<% end %>
+		<% end %>
+	<% end %>
+
+		
+
+	<% @description.images.each do |image| %>
+		<%= image_tag(image.image_url, size: "320x200")%>
+	
+	<%end%>
+
+	
+		<p><%= @description.detail %></p>
+
+	<h2><%= @description.address %></h2>
+
+
+	<Br/>
+	<%= link_to 'New Image', new_city_list_description_image_path(@list.city, @list, @description) %>
+</div>

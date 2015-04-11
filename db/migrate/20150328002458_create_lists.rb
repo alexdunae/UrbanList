@@ -3,6 +3,8 @@ class CreateLists < ActiveRecord::Migration
     create_table :lists do |t|
       t.references :city, index: true
       t.string :name
+      t.string :nome
+      t.string :image_url
 
       t.timestamps null: false
     end

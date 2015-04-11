@@ -1,16 +1,26 @@
-<div id="header">
-	<h1>Cities#index</h1>
-	<a href="">Welcome</a>
-</div>
-
-<div id="cityBody">
-	<% @cities.each do |city| %>
-	<div id="cityBtn">
-		<%= image_tag(city.image_url) %><Br/>
-		<%= link_to city.name, city_list_path(city)%>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<%= javascript_include_tag :defaults %>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo"><%= image_tag("/seedImages/logo-urbanlists.png", :alt => "Logo", :id => "indexImg") %></div>
 	</div>
-	<%end%>
 
-	<Br/>
-	<%= link_to 'New city', new_city_path %>
+	<div id="cityBody">
+		<div id="logoTop"><%= image_tag("/seedImages/logo-urbanlists.png", :alt => "Logo", size: "160x100") %></div>
+		
+		<% @cities.each do |city| %>
+		<ul class="img-list">
+  			<li>
+		    <%= image_tag(city.image_url, size: "640x400") %><Br/>
+		    <span class="text-content"><%= link_to city.name, city_path(city), :class => "link-inside-img"%></span>
+			</li>
+		</ul>
+		<%end%>
+
+		<Br/>
+		<%= link_to 'New city', new_city_path %>
+	</div>
+
+	<script type="text/javascript" src=""></script>
 </div>
+

@@ -15,6 +15,10 @@ class CitiesController < ApplicationController
 	    end
   end
 
+  def show
+    @city = City.find(params[:id])
+  end
+
   def new
   	@city = City.new
   end
