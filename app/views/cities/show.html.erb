@@ -1,9 +1,7 @@
 <div id="cityBody">
 	<%= link_to 'Back', cities_path%>
-	<a href="#" class="select-en">English</a>
-	<a href="#" class="select-pt">Português</a>
 	
-	<div class="txt-pt">
+	<div class="txt-en">
 		<% @city.lists.each do |list| %>
 			<div id="cityBtn">
 				<%= image_tag(list.image_url, size: "320x200") %><Br/>
@@ -12,7 +10,7 @@
 		<%end%>
 	</div>
 
-	<div class="txt-en">
+	<div class="txt-pt">
 		<% @city.lists.each do |list| %>
 			<div id="cityBtn1">
 				<%= image_tag(list.image_url, size: "320x200") %><Br/>
@@ -22,5 +20,7 @@
 	</div>
 
 	<Br/>
+	<% if signed_in? %>
 	<%= link_to 'New List', new_city_list_path(@city) %>
+	<%end%>
 </div>

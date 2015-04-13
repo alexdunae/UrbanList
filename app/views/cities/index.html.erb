@@ -1,11 +1,9 @@
-<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<%= javascript_include_tag :defaults %>
 <div id="wrapper">
 	<div id="header">
 		<div id="logo"><%= image_tag("/seedImages/logo-urbanlists.png", :alt => "Logo", :id => "indexImg") %></div>
 	</div>
 
-	<div id="cityBody">
+	<div id="cityBodyShow">
 		<div id="logoTop"><%= image_tag("/seedImages/logo-urbanlists.png", :alt => "Logo", size: "160x100") %></div>
 		
 		<% @cities.each do |city| %>
@@ -18,8 +16,11 @@
 		<%end%>
 
 		<Br/>
+		<% if signed_in? %>
 		<%= link_to 'New city', new_city_path %>
+		<%end%>
 	</div>
+
 
 	<script type="text/javascript" src=""></script>
 </div>

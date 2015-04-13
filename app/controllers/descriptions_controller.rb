@@ -3,6 +3,8 @@ class DescriptionsController < ApplicationController
 
   def show
   	@description = @list.descriptions.find(params[:id])
+    @first = 0
+    @firstImage = ''
   end
 
   def create

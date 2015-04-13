@@ -3,12 +3,30 @@
 <head>
   <title>UrbanList</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body style="margin: 0;">
+	<div id="header1">
+		<a href="#" class="select-en"><img src="http://www.icicp.org/wp-content/uploads/2014/02/uk-flag.jpg" alt="uk" height="20" width="32"></a>
+		<a href="#" class="select-pt"><img src="http://wallpaper.ultradownloads.com.br/269776_Papel-de-Parede-Bandeira-do-Brasil--269776_1920x1080.jpg" alt="br" height="20" width="32"></a>
 
-<%= yield %>
+		<h3 id="notice"><%= flash[:notice] %></h3>
+		<% if signed_in? %>
+		  <h3 id ="userName"><%= current_user.name %></h3>
+
+		  <%= link_to 'Sign out', sign_out_path, method: :delete%>
+		  <p><%= link_to 'Create a new user', new_user_path%></p>
+		<% else %>
+		  
+		  <p><%= link_to 'Sign in', new_session_path%></p>
+		<% end %>
+	</div>
+		
+	<%= yield %>
+
 
 </body>
 </html>

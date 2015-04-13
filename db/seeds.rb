@@ -1,16 +1,17 @@
 # Crowdfunder seed data
  
 puts 'Deleting any existing data...'
-[Image, Description, List, City].each { |model| model.destroy_all }
+[User, Image, Description, List, City].each { |model| model.destroy_all }
  
 puts 'Adding data...'
+
 saoPaulo = City.create(
                   name: 'São Paulo',
                   image_url: "http://bustravelbrasil.com/wp-content/uploads/Sao-Paulo-bridge.jpg")
 
 coxinhas = saoPaulo.lists.create(name: 'Best Coxinhas', nome: 'Melhores coxinhas', image_url:"http://rasktravel.com/wp-content/uploads/Coxinha.jpg")
 
-veloso = coxinhas.descriptions.create(name: 'Veloso Bar', 
+veloso = coxinhas.descriptions.create(name: 'Veloso Bar',
 							subtitle: 'Enjoy with no hurries.',
 							subtitulo: 'Para aproveitar sem nenhuma pressa.', 
 							address: 'Rua Conceição Veloso, 54, Vila Mariana, São Paulo', 
@@ -189,8 +190,8 @@ rio = City.create(
 feijoada = rio.lists.create(name: 'Best Feijoadas', nome:'Melhores Feijoadas', image_url:"http://myrestaurant.pt/sites/default/files/styles/restaurante-slide/public/imagens/especialidades/feijoada_0.jpeg")
 
 barDoBeto = feijoada.descriptions.create(name: 'Bar do Beto', 
-							subtitle: 'Tradicional ponto da boemia carioca.', 
-							subtitulo: 'Traditional point of the carioca bohemia.', 
+							subtitle: 'Traditional point of the carioca bohemia.', 
+							subtitulo: 'Tradicional ponto da boemia carioca.', 
 							address: 'Rua Farme de Amoedo, 51 Ipanema | Rio de Janeiro | RJ', 
 							detalhe: "O bar tradicional, porém com um visual moderno, situado no Bairro de Ipanema,
 									é um ponto obrigatório tanto para cariocas quanto para turistas que querem apreciar uma bela 
@@ -203,8 +204,8 @@ a tourist or a natural.',
 							priceRange: 4)
 
 botequimInf = feijoada.descriptions.create(name: 'Botequim Informal', 
-							subtitle: 'Informalidade sempre bem-vinda.', 
-							subtitulo: 'Informality is always welcome.', 
+							subtitle: 'Informality is always welcome.', 
+							subtitulo: 'Informalidade sempre bem-vinda.', 
 							address: 'R. Domingos Ferreira, 215 Copacabana | Rio de Janeiro | RJ', 
 							detalhe: "Além de ser famoso pelo seu chopp, o Botequim Informal também se destaca
 									pela sua feijoada, que está, sem dúvida alguma, entre as melhores da cidade do Rio de Janeiro.", 
@@ -214,8 +215,8 @@ by its feijoada, which is doubtless between the top ones in the city of Rio de J
 							priceRange: 5)
 
 cardosao = feijoada.descriptions.create(name: 'Armazém do Cardosão', 
-							subtitle: 'Simplicidade e muita alegria.', 
-							subtitulo: 'Simplicity and lots of joy.', 
+							subtitle: 'Simplicity and lots of joy.', 
+							subtitulo: 'Simplicidade e muita alegria.', 
 							address: 'R. Cardoso Júnior 312, Laranjeiras, Rio de Janeiro, RJ', 
 							detalhe: "De aparência simples, o lugar esconde uma clássica feijoada do Rio de Janeiro,
 									além de muitas vezes contar com o samba de rua espontâneo feito pelos próprios frequentadores do 
@@ -228,8 +229,8 @@ themselves.',
 							priceRange: 3)
 
 casaDaFeijoada = feijoada.descriptions.create(name: 'Casa da Feijoada', 
-							subtitle: 'O nome diz tudo.', 
-							subtitulo: 'The name says it all. (Feijoadas home)', 
+							subtitle: 'The name says it all. (Feijoadas home)', 
+							subtitulo: 'O nome diz tudo.', 
 							address: 'Rua Prudente de Morais, 10 - loja B Ipanema - Rio de Janeiro - RJ', 
 							detalhe: "Um verdadeiro banquete para qualquer amante de feijoada. O lugar serve o prato
 									com diversas opções de carnes e acompanhamentos, além de entradas e doces caseiros.", 
@@ -239,8 +240,8 @@ options of meats and side dishes, besides entries and home made desserts.',
 							priceRange: 4)
 
 brasileirinho = feijoada.descriptions.create(name: 'Brasileirinho', 
-							subtitle: 'Porque a feijoada é brasileira.', 
-							subtitulo: 'Because feijoada is brazilian.', 
+							subtitle: 'Because feijoada is brazilian.', 
+							subtitulo: 'Porque a feijoada é brasileira.', 
 							address: 'Avenida Atlântica, 3654 - Copacabana, Rio de Janeiro - RJ', 
 							detalhe: "Localizado na orla de Copacabana, o lugar serve todo o tipo de pratos típicos
 										brasileiros, e é claro, não tem nada mais típico que a feijoada.", 

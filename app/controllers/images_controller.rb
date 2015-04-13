@@ -5,11 +5,11 @@ class ImagesController < ApplicationController
   end
 
   def create
-  	@image = @desc.descriptions.new(image_params)
+  	@image = @desc.images.new(image_params)
 
 
 	    if @image.save
-	      redirect_to city_list_description_path(@desc.list.city, @desc.list, @desc), notice: 'Created!'
+	      redirect_to cities_path, notice: 'Created!'
 	    else
 	      render 'new'
 	    end

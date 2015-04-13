@@ -42,6 +42,16 @@ body {
 	min-width: 60%;
 	font-family: 'Lato', sans-serif;
 }
+#cityBodyShow{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color: #FFF9F5;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+}
 #cityBtn
 {
 	display:block;
@@ -165,4 +175,42 @@ span.text-content span {
 }
 .link-inside-img:active { 
   color: white;
+}
+
+#notice{
+	color: white; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#userName{
+	color: #FFE2BA; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#header1{
+	background-color: #DE6704;
+	border-color: #AE4F00;
+}
+
+#slider{
+	width: 640px;
+	height: 400px;
+	overflow: hidden;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#slider .slides{
+	display: block;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide{
+	float: left;
+	list-style-type: none;
+	width: 640px;
+	height: 400px;
 }
