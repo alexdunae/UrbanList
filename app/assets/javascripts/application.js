@@ -44,7 +44,7 @@ function setup()
     //settings for slider
     var width = 640;
     var animationSpeed = 1000;
-    var pause = 5000;
+    var pause = 4000;
     var currentSlide = 1;
 
     //cache DOM elements

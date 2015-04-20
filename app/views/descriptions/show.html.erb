@@ -1,20 +1,26 @@
-<div id="cityBody">
+<div id="descriptionBody">
 	<%= link_to 'Back', city_list_path(@list.city, @list)%>
 		<div id="slider">
 			<ul class="slides">
 				<% @description.images.each do |image| %>
 					<% if @first == 0 %>
-						<% @first = 1 %>
-						<% @imageFirst = image %>
+						<% if image != nil %>
+							<% @first = 1 %>
+							<% @imageFirst = image %>
+						<% end %>
 					<% end %>
 					<li class="slide"><%= image_tag(image.image_url, size: "640x400")%></li>
 				<%end%>
-				<li class="slide"><%= image_tag(@imageFirst.image_url, size: "640x400")%></li>
+				<% if  @imageFirst != nil  %>
+					<li class="slide"><%= image_tag(@imageFirst.image_url, size: "640x400")%></li>
+				<% else %>
+					<li class="slide"><%= image_tag('http://media.giphy.com/media/JIJNVViUm4GgU/giphy.gif', size: "640x400")%></li>
+				<% end %>
 			</ul>
 	    </div>
 	<div class="txt-en">
-		<h1><%= @description.name %></h1>
-		<h2><%= @description.subtitle %></h2>
+		<h1 id="descriptionName"><%= @description.name %></h1>
+		<h2 id="descriptionSubtitle"><%= @description.subtitle %></h2>
 
 	    <% if @description.priceRange == 5 %>
 			<div id="priceRange">$$$$$</div>
@@ -38,16 +44,16 @@
 			<% end %>
 		<% end %>
 		
-			<p><%= @description.detail %></p>
+			<p id="detail"><%= @description.detail %></p>
 
-		<h2><%= @description.address %></h2>
+		<h2 id="adress"><%= @description.address %></h2>
 		<Br/>
 		<%= link_to 'Add your own image!', new_city_list_description_image_path(@list.city, @list, @description) %>
 	</div>
 
 	<div class="txt-pt">
-		<h1><%= @description.name %></h1>
-		<h2><%= @description.subtitulo %></h2>
+		<h1 id="descriptionName"><%= @description.name %></h1>
+		<h2 id="descriptionSubtitle"><%= @description.subtitulo %></h2>
 		
 	    <% if @description.priceRange == 5 %>
 			<div id="priceRange">$$$$$</div>
@@ -71,9 +77,9 @@
 			<% end %>
 		<% end %>
 		
-			<p><%= @description.detalhe %></p>
+			<p id="detail"><%= @description.detalhe %></p>
 
-		<h2><%= @description.address %></h2>
+		<h2 id="adress"><%= @description.address %></h2>
 
 		<Br/>
 		<%= link_to 'Adicione sua imagem!', new_city_list_description_image_path(@list.city, @list, @description) %>

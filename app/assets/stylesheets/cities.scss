@@ -4,6 +4,11 @@
 body {
     background-color: #FF8929;
 }
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
 #header
 {
 	display:block;
@@ -41,6 +46,7 @@ body {
 	max-width: 60%;
 	min-width: 60%;
 	font-family: 'Lato', sans-serif;
+	min-height: 600px;
 }
 #cityBodyShow{
 	display:block;
@@ -106,14 +112,15 @@ body {
 {
 	display:block;
 	margin-left:auto;
-	margin-right:auto;
-	background-color: #FFE4BF;
-	border-color: #FFBC5E;
+	margin-right: auto;
+	margin-bottom: 5px;
+	background-color: #E0E0E0;
+	border-color: #141414;
 	border-bottom: 0px;
 	border-top: 0px;
 	border-style: solid;
     border-width: 1px;
-    border-radius: 15px;
+    border-radius: 5px;
 	max-width: 60%;
 	min-width: 60%;
 	font-family: 'Lato', sans-serif;
@@ -213,4 +220,152 @@ span.text-content span {
 	list-style-type: none;
 	width: 640px;
 	height: 400px;
+}
+
+.demo-2 {
+    position:relative;
+    width:300px;
+    height:180px;
+    overflow:hidden;
+    float:left;
+    margin-top: 20px;
+    margin-left:15px;
+    background-color:#3D3D3D;
+}
+.demo-2 p,.demo-2 a {
+    color:#fff;
+    padding:0px;
+    left:-20px;
+    top:20px;
+    position:relative
+}
+.demo-2 a {
+    font-size:30px;
+    line-height:24px;
+    margin:0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-104px -130px;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect img.top:hover {
+    bottom:-55px;
+    padding-top:40px;
+}
+a.zero {
+    margin:0;
+    padding:0;
+}
+
+#select-language{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.linkToDescription
+{
+	margin-bottom:0px; 
+}
+.linkToDescription:link { 
+  color: #3D3D3D;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: none;
+}
+.linkToDescription:visited { 
+  color: #3D3D3D;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: none;
+}
+.linkToDescription:hover { 
+  color: #CCCCCC;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: none;
+}
+.linkToDescription:active { 
+  color: #3D3D3D;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: none;
+}
+#listSubtitle
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.4em;
+	margin-top: 3px;
+}
+
+#descriptionBody{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color: white;
+	max-width: 60%;
+	min-width: 60%;
+	font-family: 'Lato', sans-serif;
+	min-height: 600px;
+}
+#slider
+{
+	border-color: #FAC293;
+	border-style: solid;
+    border-width: 8px;
+    border-radius: 15px;
+    background-color: #FAC293;
+}
+#descriptionName{
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+  margin: 0px;
+  color: #028585;
+}
+
+#descriptionSubtitle{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  margin: 0px;
+  color: #36AAAA;
+}
+
+#priceRange{
+	font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  margin: 0px;
+  color: #028585;
+}
+#detail, #address{
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#detail{
+	font-size: 1.3em;
+}
+
+#formBody{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.3em;
+	background-color: white;
+	max-width: 40%;
+	min-width: 40%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+#formHeader{
+	max-width: 40%;
+	min-width: 40%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }

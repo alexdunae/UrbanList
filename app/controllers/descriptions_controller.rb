@@ -25,7 +25,7 @@ class DescriptionsController < ApplicationController
   private
 
   def description_params
-    params.require(:description).permit(:name, :detail, :address, :subtitle, :rating, :list_id)
+    params.require(:description).permit(:name, :subtitle,:subtitulo,:detail, :detalhe, :address, :priceRange, :list_id)
   end  
 
   def lookup_list

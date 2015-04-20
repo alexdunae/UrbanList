@@ -10,6 +10,11 @@
   <%= d.text_field :subtitle, required: true %>
   <br>
 
+  <%= d.label :subtitulo %>
+  <br>
+  <%= d.text_field :subtitulo, required: true %>
+  <br>
+
   <%= d.label :address %>
   <br>
   <%= d.text_field :address, required: true %>
@@ -21,9 +26,15 @@
   <br>
   <br>
 
-  <%= d.label :rating %>
+  <%= d.label :detalhe %>
   <br>
-  <%= d.text_field :rating, required: true %>
+  <%= d.text_area :detalhe %>
+  <br>
+  <br>
+
+  <%= d.label :priceRange %>
+  <br>
+  <%= d.text_field :priceRange, required: true %>
   <br>
 
   <%= d.submit 'Save!' %>

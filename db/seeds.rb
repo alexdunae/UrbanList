@@ -26,8 +26,8 @@ veloso = coxinhas.descriptions.create(name: 'Veloso Bar',
 							priceRange: 4)
 
 frango = coxinhas.descriptions.create(name: 'Frangó', 
-							subtitle: 'Porque a coxinha precisa de Frangó',
-							subtitulo: 'Because coxinhas need "Frangó"(chicken).',  
+							subtitle: 'Because coxinhas need "Frangó"(chicken).',
+							subtitulo: 'Porque a coxinha precisa de Frangó',  
 							address: 'Largo da Matriz de Nossa Senhora do Ó, 168 - Freguesia Do Ó - São Paulo', 
 							detalhe: "Aberto desde 1987, o tradicional bar, oferece além das maravilhosas
 									coxinhas, o bar também conta com uma imensa carta de cervejas importadas e oferece 
@@ -37,8 +37,8 @@ frango = coxinhas.descriptions.create(name: 'Frangó',
 							priceRange: 5)
 
 pdrBrasileira = coxinhas.descriptions.create(name: 'Padaria Brasileira', 
-							subtitle: 'A palavra é variedade.',
-							subtitulo: 'The word is “variety”',  
+							subtitle: 'The word is “variety”',
+							subtitulo: 'A palavra é variedade.',  
 							address: 'Rua Augusta, 1592 - Consolação - São Paulo – SP', 
 							detalhe: "Tradicional, a franquia premiada no ABC possuí um único ponto em
 									São Paulo, que fica na Augusta. A coxinha responsável por grande da fama da padaria, é 
@@ -56,8 +56,8 @@ such as ham.',
 							priceRange: 5)
 
 attimo = coxinhas.descriptions.create(name: 'Attimo Restaurante', 
-							subtitle: 'Coxinha Italiana.',
-							subtitulo: 'Italian Coxinhas.',  
+							subtitle: 'Italian Coxinhas.',
+							subtitulo: 'Coxinha Italiana.',  
 							address: 'Rua Diogo Jácome, 341 - Vila Nova Conceição, São Paulo - SP', 
 							detalhe: "O restaurante, especializado na culinária italiana, também possuí um
 									bar e é lá que estão localizadas estas coxinhas, que apesar de não serem o grande 
@@ -70,8 +70,8 @@ be underestimated.',
 							priceRange: 3)
 
 original = coxinhas.descriptions.create(name: 'Bar Original', 
-							subtitle: 'Todo tipo de coxinha',
-							subtitulo: 'Every kind of coxinhas.',  
+							subtitle: 'Every kind of coxinhas.',
+							subtitulo: 'Todo tipo de coxinha',  
 							address: 'Rua Diogo Jácome, 341 - Vila Nova Conceição, São Paulo - SP', 
 							detalhe: "Especializado em choppes, o bar também conta com coxinhas de
 									sabores extremamente exóticos e merecedores de elogios, como bobó de camarão, 
@@ -82,11 +82,11 @@ exotic and praiseworthy flavours, such as shrimp and pork knee.',
 							priceRange: 4)
 
 
-burgers = saoPaulo.lists.create(name: 'Best Burgers', nome: 'Melhores hamburgueres', image_url:"http://www.mcdonalds.ca/content/dam/Canada/en/Promo/blt/img/burger.png")
+burgers = saoPaulo.lists.create(name: 'Best Burgers', nome: 'Melhores hamburgueres', image_url:"http://photos-ak.sparkpeople.com/nw/3/9/l391837837.jpg")
 
 meats = burgers.descriptions.create(name: 'Meats', 
-							subtitle: 'Novo é sempre bom.',
-							subtitulo: 'New is always good.',  
+							subtitle: 'New is always good.',
+							subtitulo: 'Novo é sempre bom.',  
 							address: 'Rua dos Pinheiros,320 – Pinheiros, São Paulo', 
 							detalhe: "A hamburgueria inaugurada em 2012 tem chamado atenção e é praticamente 
 									unanimidade nas listas de melhores hamburgueres de São Paulo. Além do hamburguer genial, a 
@@ -102,8 +102,8 @@ lots of options.',
 							priceRange: 5)
 
 louis = burgers.descriptions.create(name: 'St. Louis Classic Burguers', 
-							subtitle: 'Pequeno lugar, grande hamburguer.', 
-							subtitulo: 'Small Place, Great Burger.', 
+							subtitle: 'Small Place, Great Burger.', 
+							subtitulo: 'Pequeno lugar, grande hamburguer.', 
 							address: 'Rua Batatais, 242, Jardim Paulista, São Paulo, SP.', 
 							detalhe: "Com cara americana, o St Louis Burger é pequeno e aconchegante, porém o
 									mesmo não pode ser dito de suas principais opções de hamburguer. Com alternativas de 220g, a 
@@ -116,8 +116,8 @@ building your own sandwich, and a sublime meat, this place definitely deserves y
 							priceRange: 4)
 
 zDeli = burgers.descriptions.create(name: 'Z Deli Sanduíches', 
-							subtitle: 'Espera que vale.', 
-							subtitulo: 'Worth the wait.', 
+							subtitle: 'Worth the wait.', 
+							subtitulo: 'Espera que vale.', 
 							address: 'Rua Conceição Veloso, 54, Vila Mariana, São Paulo', 
 							detalhe: "Como o espaço do Z Deli não é muito grande (mesmo no segundo e maior
 									endereço em Pinheiros), e a qualidade do seu hamburguer tem se tornado conhecida, a espera é 
@@ -133,8 +133,8 @@ and we can guarantee, burger is worth every minute in the line.',
 							priceRange: 5)
 
 bistro = burgers.descriptions.create(name: '12 Burger & Bistro', 
-							subtitle: 'Não só em hamburguerias', 
-							subtitulo: 'Not only a burger place.', 
+							subtitle: 'Not only a burger place.', 
+							subtitulo: 'Não só em hamburguerias', 
 							address: 'Rua Simão Álvares, 1018 - Pinheiros', 
 							detalhe: "Apesar do 12 Burger & Bistrô não ser uma hamburgueria própriamente dita, isso
 									não o impede de aparecer nesta lista. Por sinal, o hamburguer é tão importante que o lugar até 
@@ -147,8 +147,8 @@ offers a variety of beers and a wide range of option for the entries.',
 							priceRange: 4)
 
 lanchonete = burgers.descriptions.create(name: 'Lanchonete da Cidade', 
-							subtitle: 'Homenageando São Paulo', 
-							subtitulo: 'Homage to the City', 
+							subtitle: 'Homage to the City', 
+							subtitulo: 'Homenageando São Paulo', 
 							address: 'Alameda Tietê, 110 – Jardins – São Paulo', 
 							detalhe: "Saboreie essa cidade - é o que diz a Lanchonete, e com certeza eles ajudam a
 									fazer isso. Com 5 lojas diferentes em São Paulo, e lanches exclusivos de algumas localidades, a 

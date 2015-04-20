@@ -23,7 +23,7 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:name, :image_url, :city_id)
+    params.require(:list).permit(:name, :nome, :image_url, :city_id)
   end  
 
   def lookup_city
