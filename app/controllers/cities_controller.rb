@@ -4,6 +4,8 @@ class CitiesController < ApplicationController
   	@cities = City.all
   end
 
+  # this methods (and in the other controllers, too) should use a `before_action`
+  # to make sure that the request is coming from a signed in user
   def create
   	@city = City.new(cities_params)
 
@@ -27,6 +29,6 @@ class CitiesController < ApplicationController
 
   def cities_params
     params.require(:city).permit(:image_url, :name)
-  end  
+  end
 
 end

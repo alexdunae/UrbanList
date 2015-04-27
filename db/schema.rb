@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20150411230051) do
     t.string   "address"
     t.text     "detail"
     t.text     "detalhe"
-    t.integer  "priceRange"
+    t.integer  "priceRange" # Rails and Ruby really encourage names_to_be_capitalized_like_this
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

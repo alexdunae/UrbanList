@@ -14,6 +14,7 @@
 				<% if  @imageFirst != nil  %>
 					<li class="slide"><%= image_tag(@imageFirst.image_url, size: "640x400")%></li>
 				<% else %>
+					<!-- lol -->
 					<li class="slide"><%= image_tag('http://media.giphy.com/media/JIJNVViUm4GgU/giphy.gif', size: "640x400")%></li>
 				<% end %>
 			</ul>
@@ -21,6 +22,14 @@
 	<div class="txt-en">
 		<h1 id="descriptionName"><%= @description.name %></h1>
 		<h2 id="descriptionSubtitle"><%= @description.subtitle %></h2>
+
+		<!--
+			Woah, complex!  How about...
+
+			<div id="priceRange"><%= '$' * description.priceRange %></div>
+
+		-->
+
 
 	    <% if @description.priceRange == 5 %>
 			<div id="priceRange">$$$$$</div>
@@ -43,7 +52,7 @@
 				<% end %>
 			<% end %>
 		<% end %>
-		
+
 			<p id="detail"><%= @description.detail %></p>
 
 		<h2 id="adress"><%= @description.address %></h2>
@@ -54,7 +63,7 @@
 	<div class="txt-pt">
 		<h1 id="descriptionName"><%= @description.name %></h1>
 		<h2 id="descriptionSubtitle"><%= @description.subtitulo %></h2>
-		
+
 	    <% if @description.priceRange == 5 %>
 			<div id="priceRange">$$$$$</div>
 		<% else %>
@@ -76,7 +85,7 @@
 				<% end %>
 			<% end %>
 		<% end %>
-		
+
 			<p id="detail"><%= @description.detalhe %></p>
 
 		<h2 id="adress"><%= @description.address %></h2>
@@ -86,5 +95,5 @@
 	</div>
 
 
-	
+
 </div>
